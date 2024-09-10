@@ -1,1 +1,7 @@
 # Final-year-project
+IOT based plant monitoring
+
+Healthy plants contribute to a country's successful agricultural output. A convolutional neural network (CNN) can assess plant health by analysing leaves. IoT devices assist in gathering data and monitoring plant conditions. By training the CNN with extensive datasets of both healthy and diseased plants, the model learns to recognize patterns and differentiate between various diseases. This early disease detection enables prompt action, which helps minimize crop losses. 
+The hardware and software requirements for this project are Arduino uno, Breadboard, sensors (DHT11, Soil moisture sensor), jumper wires. Python environment-jupyter notebook is used for this project, Arduino IDE and python libraries (Pandas, NumPy, matplotlib).
+Data such as temperature, moisture and humidity are collected and then sent to the Arduino uno and the data is collected and stored in an excel sheet with values. This data is then fed into SVM model (support vector Machine) to predict if water is required or not.
+The CNN model is trained using extensive datasets of common diseases affecting tomato plants. The trained model is then tested with the image of leaf taken through webcam to predict if the leaf growth is healthy or not. The tomato plant shows symptoms like yellowing, spots, curling, wilting, mosaic pattern etc on the leaf. The model is also trained to predict the type of disease plant is facing. The Model has achieved 87% accuracy. 
